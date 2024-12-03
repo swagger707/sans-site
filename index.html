@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>James Cortis - Meme Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <h1>Subscribe to <a href="https://www.Youtube.com/@new-Hedges_boi
+        ">Hedges_boi </a> :)</h1>
+    <img src="images/pepe.jpg"><img src="images/hedge.jpg">
+    <p>Click on the arrows to navigate through the images</p>
+    
+        <div class="gallery">
+            <script>
+                document.addEventListener('keydown', function (event) {
+                    if (event.key === 'ArrowRight') {
+                        nextImage();
+                    }
+                });
+            </script>
+            
+            <button class="arrow-button left" onclick="prevImage()">&#8592; Back</button>
+
+            <img id="centralImage" src="images/sans1.jpeg" title="Description of the image">
+            <button class="arrow-button right" onclick="nextImage()">&#9654 next;</button>
+            <script>
+                document.addEventListener('keydown', function (event) {
+                    if (event.key === 'ArrowLeft') {
+                        prevImage();
+                    }
+                });
+            </script>
+        </div>
+        <div class="links"><a href="https://www.google.com/" target="_blank">YoUtUbE NoT gOgOlE</a></div>
+        <script src="javascript/script.js"></script>
+        
+    </body>
+    </html>
